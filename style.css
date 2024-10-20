@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #032030, #16528a);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 50px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+section.topo-do-site {
+    padding: 25px 4%;
+    position: absolute;
+    top: 50%; /* Centralizar verticalmente */
+    transform: translateY(-50%); /* Ajuda a centralizar o elemento */
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #7981897a;
+    font-size: 85px; /* Tamanho da letra do texto h1 */
+    text-align: left; /* Alinha o texto à esquerda */
+    line-height: 70px; /* Espaçamento entre o H1 e o P */
+    margin: 0; /* Remove qualquer margem padrão */
+    margin-top: 100px;
+}
+
+.topo-do-site .txt-topo-site p { 
+    color: #dee2e6b5;
+    margin: 30px 0; /* Define margens superior e inferior */
+    font-size: 17px; /* Tamanho do texto do parágrafo */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 20px;
+}
+
+.btn-contato button {
+    background-color: #2c445190; /* Cor de fundo */
+    color: #d6d8e5; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 15px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.2s; /* Efeito de transição */
+}
+
+.btn-contato button:hover {
+    background-color: #41637590; /* Cor de fundo */
+    background-color: ; /* Cor ao passar o mouse */
+}
+
+.btn-contato {
+    margin-left: -5px; /* Aumente este valor para mover o botão para a direita */
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    header > .interface {
+        flex-direction: column; /* Alinha logo e menu verticalmente */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    header nav ul li {
+        padding: 10px 0; /* Aumenta o espaçamento entre os itens do menu */
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column; /* Coloca o texto e a imagem em coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Diminui a distância entre eles */
+    }
+
+    .topo-do-site h1 {
+        font-size: 40px; /* Tamanho menor para telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 18px; /* Tamanho menor para o parágrafo */
+        text-align: center; /* Centraliza o parágrafo */
+        margin: 10px 20px; /* Adiciona margem */
+    }
+
+    .btn-contato {
+        margin-left: 0; /* Remove a margem à esquerda no botão */
+        margin-top: 10px; /* Adiciona um pouco de espaço acima do botão */
+    }
+}
+
+@media (max-width: 600px) {
+    .topo-do-site h1 {
+        font-size: 30px; /* Tamanho menor para h1 */
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 16px; /* Tamanho menor para p */
+    }
+
+    .btn-contato button {
+        font-size: 14px; /* Tamanho menor para o botão */
+        padding: 8px 16px; /* Ajusta o padding do botão */
+    }
+}
+
+/* Estilo para imagens */
+.img-topo-site img {
+    max-width: 100%; /* Faz com que a imagem ocupe 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
